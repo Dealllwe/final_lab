@@ -1,6 +1,6 @@
 import unittest
 from transformers import pipeline
-from your_module import Emotions  # Замените 'your_module' на имя вашего модуля
+from streamlit_app import Emotions  # Замените 'your_module' на имя вашего модуля
 
 class TestEmotions(unittest.TestCase):
     @classmethod
