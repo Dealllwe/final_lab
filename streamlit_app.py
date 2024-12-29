@@ -20,8 +20,8 @@ user_input = st.text_area('Введите текст:')
 if st.button('Анализировать'):
     sentiment, score = emotion_analyzer.take_emotion(user_input)
     sentiment_translation = {
-        "positive": "Позитивный",
-        "negative": "Негативный",
-        "neutral": "Нейтральный"
+        "POSITIVE": "Позитивный",
+        "NEGATIVE": "Негативный",
+        "NEUTRAL": "Нейтральный"
     }
-    st.write(f"Тональность текста: {sentiment_translation[sentiment]} ({score:.2f})")
+    st.write(f"Тональность текста: {sentiment_translation[sentiment]}")
